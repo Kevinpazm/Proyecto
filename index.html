@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA PERSONAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="formlogin" id="formlogin">
+        <div class="login-form">
+            <h2>Inicia sesión</h2>
+            <form method="post" id="LoginFo">
+                <div class="form-grupo-login">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-grupo-login">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="recordar">¿Olvidaste tu Contraseña?</div>
+                <button type="submit" class="boton-Iniciar">Inicia sesión</button>
+                <div class="Registrate">
+                    <p>¿No tienes cuenta? <a href="#" onclick="ShowRegisterForm()">Registrate</a> </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="formregister" id="formregister">
+        <div class="registro-form" id=" registerForm">
+            <h2>Registrate</h2>
+            <form method="post" id="registerForm">
+                <div class="form-grupo">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="password">Confirmar Contraseña</label>
+                    <input type="password" id="confirmpassword" name="confirm-password" required>
+                </div>
+                <button type="submit" class="boton-Registrarse" onclick="showLoginForm()">Registrarse</button>
+                <div class="Iniciarsesion">
+                    <p>¿Ya tienes cuenta? <a href="#" onclick="showLoginForm()">Inicia Sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="menu container">
+            <img src="img/logo.png" class="Logo" alt="">
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Error.html">Inicio</a></li>
+                    <li><a href="#TopsSeccion">Tops</a></li>
+                    <li><a href="#" onclick="showLoginForm()">login</a></li>
+                    <li><a href="#" onclick="ShowRegisterForm()">registrate</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>ENTRETENIMIENTO PURO</h1>
+            <p>Descubre y averigua el inmenso mundo del entretenimiento,experimenta todo tipo de emociones con nuestros videos. te invitamos!!</p>
+            <a href="#" class="btn-1" onclick="showLoginForm()">Inicia Sesión</a>
+        </div>
+    </header>
+
+    <section class="Videos">
+        <div class="Videos-content container">
+            <h2>Variedad de videos</h2>
+            <p class="text-p">Encuentra una gran variedad de videos, desde los mas triste hastas los mas divertidos</p>
+            <div class="Videos-group">
+                <div class="videos-1">
+                    <video src="vid/V7.mp4" width="200px" height="150px"border-radius="10px" controls></video>
+                    <h3>COMEDIA</h3>
+                </div>
+                <div class="videos-1">
+                    <video src="vid/V4.mp4" width="200px" height="150px"border-radius="10px" controls></video>
+                    <h3>ACCION-TERROR</h3>
+                </div>
+                <div class="videos-1">
+                    <video src="vid/V5.mp4" width="200px" height="150px"border-radius="10px" controls></video>
+                    <h3>DRAMA-SUSPENSO</h3>
+                </div>
+                <div class="videos-1">
+                    <video src="vid/V8.mp4" width="200px" height="150px"border-radius="10px" controls></video>
+                    <h3>SABIDURIA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="Tops" id="TopsSeccion">
+        <div class="Tops-content container">
+            <h2>TOPS</h2>
+            <div class="Tops-group">
+                <div class="Top-1">
+                    <video src="vid/V5.mp4" width="300px" height="220px"border-radius="10px" controls></video>
+                    <div class="descripcion">
+                        <h3>Top 2</h3>
+                    </div>
+                </div>
+                <div class="Top-1">
+                    <video src="vid/V4.mp4" width="300px" height="220px" controls></video>
+                    <div class="descripcion">
+                        <h3>Top 1</h3>
+                    </div>
+                </div>
+                <div class="Top-1">
+                    <video src="vid/V8.mp4" width="300x" height="220px" controls></video>
+                    <div class="descripcion">
+                        <h3>Top 3</h3>
+                    </div>
+                </div>
+            </div>
+            <p class="txt-p">Los videos con mas topes en nuestra pagina!!, cada mes se ocuparan nuevos puestos.</p>
+        </div>
+    </main>
+
+    <section class="Servicio">
+        <div class="Servicio-content">
+            <div class="Servicio-1">
+                <h2>UN MUNDO AUIDOVISUAL</h2>
+                <p>Hoy en día, vivimos en un mundo lleno de posibilidades donde las plataformas de videos se han convertido en mucho más que un espacio de entretenimiento: son herramientas poderosas que pueden transformar vidas. ¿Tienes una pasión, un talento o un mensaje que deseas compartir? Las páginas de videos te ofrecen una oportunidad única para expresarte, inspirar a otros y dejar tu huella en el mundo.
+
+                    No importa de dónde vienes ni cuáles sean tus circunstancias actuales. Lo único que necesitas es una idea, una cámara (incluso la de tu teléfono) y el deseo de compartir algo único con el mundo. Ya sea que ames cocinar, contar historias, enseñar algo que dominas o simplemente quieras hacer reír a otros, una página de videos puede ser el puente entre tu pasión y una audiencia global.</p>
+                <a href="#" class="btn-1">¡Empieza ahora!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="general">
+        <div class="general-1">
+            <h2>PRINCIPIO</h2>
+            <p>Unetenos a la experiencia de ver videos y descargarlos totalmente gratis, sin anuncion, 
+                expermienta las diversas categorias que tenemos, no esperes más, ¡COMIENZA YA!</p>
+            <a href="#" class="btn-1">¡COMIENZA YA!</a>
+        </div>
+        <div class="general-2"></div>
+    </section>
+
+    <section class="general">
+        <div class="general-3"></div>
+        <div class="general-1">
+            <h2>DESCARGAS</h2>
+            <p>Aviéntate al mundo de las descargas de videos, todas las posibilidades de videos que guestes encontrar,
+                selecciona tu mejorar categoria y guardalo en tu telefono o pc para una mejor experiencia sin interrupciones.
+                ¡¡DESCARGA YA!!
+            </p>
+            <a href="#" class="btn-1">¡¡DESCARGA YA!!</a>
+        </div>
+    </section>
+
+    <section class="blog container">
+        <h2>blog</h2>
+        <p>Comentarios sobre nosotros !!</p>
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="img/img1.jpeg" alt="">
+                <h3>Blog 1</h3>
+                <p> es una excelente oportunidad para explorar temas como el impacto del contenido multimedia en la actualidad, la diversidad de géneros y estilos disponibles, y cómo estas plataformas han revolucionado la forma en que consumimos 
+                entretenimiento e información.</p>
+            </div>
+            <div class="blog-1">
+                <img src="img/img2.jpeg" alt="">
+                <h3>Blog 2</h3>
+                <p> Esta página de videos puede enfocarse en la experiencia del usuario y cómo estas plataformas han transformado el entretenimiento digital. Puede destacar características clave, como la facilidad para buscar contenido, la opción de suscribirse a creadores favoritos 
+                    y la capacidad de interactuar con otros usuarios a través de comentarios o likes. </p>
+            </div>
+            <div class="blog-1">
+                <img src="img/img3.jpeg" alt="">
+                <h3>Blog 3</h3>
+                <p> sería relevante discutir cómo han revolucionado la forma en que consumimos contenido audiovisual y su impacto en industrias como la publicidad, la música y la educación online.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>CREADORES</h2>
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Kevin Pazmiño</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/share/1DAzk6BCSX/?mibextid=LQQJ4d">@Facebook</a></li>
+                    <li><a href="https://www.instagram.com/kevinxv___/">@Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@kxvinlino?is_from_webapp=1&sender_device=pc">@TikTok</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Gabriel Arboleda</h3>
+                <ul>
+                    <li><a href="#">@Facebook</a></li>
+                    <li><a href="#">@Instagram</a></li>
+                    <li><a href="#">@TikTok</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Camila Cantos</h3>
+                <ul>
+                    <li><a href="#">@Facebook</a></li>
+                    <li><a href="#">@Instagram</a></li>
+                    <li><a href="#">@TikTok</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Alan Franco</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/share/19V8QfoTQp/?mibextid=LQQJ4d">@Facebook</a></li>
+                    <li><a href="https://www.instagram.com/alanx_wxz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@alanx_jxz?is_from_webapp=1&sender_device=pc">@TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    function showLoginForm() {
+    const loginForm = document.getElementById("formlogin");
+    const registerForm = document.getElementById("formregister");
+    const overlay = document.getElementById("overlay");
+    const body = document.body;
+
+    registerForm.style.display = "none";
+    loginForm.style.display = "block";
+    overlay.style.display = "block";
+    body.classList.add("no-scroll");
+
+    document.getElementById("LoginFo").ad
+    overlay.addEventListener("click", closeForm);
+}
+
+function ShowRegisterForm() {
+    const loginForm = document.getElementById("formlogin");
+    const registerForm = document.getElementById("formregister");
+    const overlay = document.getElementById("overlay");
+    const body = document.body;
+
+    loginForm.style.display = "none";
+    registerForm.style.display = "block";
+    overlay.style.display = "block";
+    body.classList.add("no-scroll");
+
+    overlay.addEventListener("click", closeForm);
+}
+
+function closeForm() {
+    const loginForm = document.getElementById("formlogin");
+    const registerForm = document.getElementById("formregister");
+    const overlay = document.getElementById("overlay");
+    const body = document.body;
+
+    loginForm.style.display = "none";
+    registerForm.style.display = "none";
+    overlay.style.display = "none";
+    body.classList.remove("no-scroll");
+}
+
+document.getElementById("LoginFo").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    window.location.href = "Inicio.html";
+});
+
+
+    </script>
+</body>
+</html>

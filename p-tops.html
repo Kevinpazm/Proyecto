@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logueado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Top.css">
+</head>
+<body>
+    <div class="contenedor active" id="contenedor">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu closed"> <i class="fa-solid fa-bars"> </i> </button>
+                <a href="Inicio.html" class="logo"> <img src="img/logo.png" alt=""></a>
+            </div>
+
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="botones-header">
+                <button id="boton-notificaciones" class="boton-notificaciones"><i class="fas fa-bell"></i>
+                    <div class="notificacion" id="notificacion">
+                        <p>No tienes notificaciones</p>
+                    </div>
+                </button>
+                <button  id="perfil-dropdown" class="perfil-dropdown"><i class="fa-solid fa-user"></i>
+                    <div class="perfil" id="perfil">
+                        <img src="img/avatar.png" alt="">
+                        <hr>
+                        <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                    </div>
+                </button>
+                </a>
+                
+            </div>
+        </header>
+        <nav class="menu-lateral">
+            <a href="Inicio.html" class=""><i class="fa-solid fa-house" ></i><p>Inicio</p></a>
+            <a href="descargas.html" class=""><i class="fa-solid fa-bolt"></i><p>Descargas</p></a>
+            <a href="p-tops.html" class="active"><i class="fa-solid fa-medal"></i><p>TOPS</p></a>
+
+            <hr>
+            
+            <a href="#"><i class="fa-solid fa-folder"></i><p>NO EN USO</p></a>
+            <a href="#"><i class="fa-solid fa-folder"></i><p>NO EN USO</p></a>
+            <a href="#"><i class="fa-solid fa-folder"></i><p>NO EN USO</p></a>
+
+            <hr>
+            
+            <a href="#"><i class="fa-solid fa-folder"></i><p>NO EN USO</p> </a>
+            <a href="#"><i class="fa-solid fa-folder"></i><p>NO EN USO</p> </a>
+            <a href="#"><i class="fa-solid fa-folder"></i><p>NO EN USO</p> </a>
+
+        </nav>
+        <main class="main">
+            <h3 class="titulo">Ranking de TOPS</h3>
+            <hr>
+            <div class="tops">
+                <div class="grid-videos">
+                    <div class="ranking-item">
+                        <span class="ranking-number">1</span>
+                        <a href="" class="video">
+                            <video src="vid/V4.mp4" width="300px" height="220px" controls></video>
+                            <div class="descripcion">
+                                <h4>Tráiler || juego del calamar</h4>
+                                <p><i class="fa-brands fa-youtube"></i></i>Netflix</p>
+                                <p>1M visualizaciones • hace 1 semana</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-number">2</span>
+                        <a href="" class="video">
+                            <video src="vid/V5.mp4" width="300px" height="220px" controls></video>
+                            <div class="descripcion">
+                                <h4>Trailer || Equipaje en mano</h4>
+                                <p><i class="fa-brands fa-youtube"></i></i>Netflix</p>
+                                <p>900K visualizaciones • hace 2 días</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="ranking-number">3</span>
+                        <a href="" class="video">
+                            <video src="vid/V8.mp4" width="300x" height="220px" controls></video>
+                            <div class="descripcion">
+                                <h4>Ingenieria y sus posibiliades</h4>
+                                <p><i class="fa-solid fa-screwdriver-wrench"></i>CTL Ingenieria</p>
+                                <p>100 K visualizaciones • hace 6 días</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>        
+    </div>
+
+    <script src="https://kit.fontawesome.com/909d560a8d.js" crossorigin="anonymous"></script>
+    <script src="Notificacion.js"></script>
+    <script src="Perfil.js"></script>
+    <script src="bloqueo de acciones.js"></script>
+    <script src="Direccionamiento.js"></script>
+</body>
+</html>
